@@ -45,7 +45,10 @@ The reference list is added at the end of the document, or can be added via
 :::
 
 ```
-
+## Code 
+```r
+1+1
+```
 
 # References
 
