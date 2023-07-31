@@ -253,13 +253,13 @@ Naming code blocks like
 ````
 gives
 
-```{.r filename="script.r"}
+````{.r filename="script.r"}
 1+1
-```
+````
 
 
 You can collapse code with 
-``` 
+```markdown 
 #| code-fold: true
 #| code-summary: "Code"
 ```
