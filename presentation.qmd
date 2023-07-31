@@ -13,7 +13,11 @@ by [@Jens Wiesehahn](https://wiesehahn.github.io/)
 
 ![logo](images/triangle_logo.png){.lightbox}
 
+Lets isert a reference [@Wiesehahn_2023].
 
-# Slide 2
 
-text on slide 2
+# References
+
+::: {#refs}
+:::
+

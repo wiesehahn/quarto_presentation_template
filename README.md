@@ -9,6 +9,14 @@ If everything works well the only thing you have to do is add content to the `pr
 
 Informtion about Quarto Markdown syntax and options for RevealJS presentations can be found at https://quarto.org/docs/presentations/revealjs/.
 
+#### References
+
+References can be manually inserted in the `references.bib` file and cited via their key (e.g. `[@Wiesehahn_2023]`. 
+
+Alternatively references can be managed within Zotero and synchronized with the `references.bib`,  plugins such as the *Citation Picker for Zotero* in VS Code help to insert citations (e.g. via `alt`+`shift`+`z`).
+
+https://quarto.org/docs/authoring/footnotes-and-citations.html
+
 
 ### Pre-installed extensions
 
