@@ -253,15 +253,7 @@ You can collapse code with
 #| code-fold: true
 #| code-summary: "Code"
 ```
-````{r}
-#| code-fold: true
-#| code-summary: "Code"
-#| echo: true
-#| eval: false
 
-1+1
-
-````
 
 
 ## Equations
