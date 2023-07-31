@@ -320,6 +320,31 @@ You can include videos in documents using the `{{{< video >}}}` shortcode. For e
 {{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
 
 
+
+## Divs and Spans
+
+You can add classes, attributes, and other identifiers to regions of content using Divs and Spans (you'll see an example of this below in [Callout Blocks]).
+
+For example, here we add the "border" class to a region of content using a div (`:::`):
+
+``` markdown
+::: {.second-color}
+This content can be styled with a border
+:::
+```
+
+::: {.second-color}
+This content can be styled with a border
+:::
+
+
+``` markdown
+[This is *some text*]{.third-color}
+```
+
+[This is *some text*]{.third-color}
+
+
 ## Callout Blocks
 
 #### Markdown Syntax
