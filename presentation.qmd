@@ -98,16 +98,6 @@ The reference list is added at the end of the document, or can be added via
 | ```             |                                   |
 +-----------------+-----------------------------------+
 
-```{=html}
-<style type="text/css">
-.heading-output {
-    border-bottom: none;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-</style>
-```
-
 
 ## Links & Images
 
@@ -117,32 +107,32 @@ The reference list is added at the end of the document, or can be added via
 <https://quarto.org>
 
 
-``` markdown                                                                                                                  
-[Quarto](https://quarto.org)                                                                                                                                         
+``` markdown
+[Quarto](https://quarto.org)
 ```
 [Quarto](https://quarto.org)           
 
 
-``` markdown                                                           
-![Caption](/images/triangle_logo.png)                                                                                                                   
+``` markdown
+![Caption](/images/triangle_logo.png)
 ```
 ![Caption](/images/triangle_logo.png){fig-alt="Logo image"}  
 
 
 ``` markdown                                                                             
-[![Caption](/images/triangle_logo.png)](https://quarto.org)                                                                                             
+[![Caption](/images/triangle_logo.png)](https://quarto.org)
 ```
 [![Caption](/images/triangle_logo.png)](https://quarto.org)    
 
 
 ``` markdown                                                  
-[![Caption](/images/triangle_logo.png)](https://quarto.org " Logo image")                                                                               
+[![Caption](/images/triangle_logo.png)](https://quarto.org " Logo image")
 ```
 [![Caption](/images/triangle_logo.png " Logo image"){fig-alt="Logo image."}](https://quarto.org) 
 
 
 ``` markdown                                                             
-[![](/images/triangle_logo.png){fig-alt="Alt text"}](https://quarto.org)                                                                                
+[![](/images/triangle_logo.png){fig-alt="Alt text"}](https://quarto.org)
 ```
 [![](/images/triangle_logo.png){fig-alt="Logo image."}](https://quarto.org)          
 
