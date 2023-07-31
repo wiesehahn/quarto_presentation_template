@@ -23,6 +23,12 @@ format:
         navigation-mode: vertical
         tbl-cap-location: bottom
         mainfont: Nunito
+        code-line-numbers: false
+        code-fold: true
+        code-summary: "Show the code"
+        code-overflow: wrap
+        code-copy: hover
+        #highlight-style: github
 
 revealjs-plugins:
     - verticator

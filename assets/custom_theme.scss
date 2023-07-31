@@ -75,14 +75,19 @@ $danger:        $red !default;
 // colour tweaks to theme
 $body-bg: $light;
 $body-color: $dark;
-$navbar-bg: $body-bg; 
-$navbar-fg: $body-color;
-$code-bg: $light;
-$code-color: $second-color;
-$card-bg: $body-bg;
-$card-border-color: $gray-300;
 
-// $code-bg: darken($body-bg, 5%);
+$code-bg: darken($body-bg, 5%);
+$code-color: $second-color;
+
+$code-block-bg: darken($body-bg, 5%);
+$code-block-border-color: $body-bg;
+
+$link-color: $blue;
+
+$border-color: lighten($link-color, 25%);
+
+
+
 
 
 // font sizes;
@@ -148,6 +153,22 @@ $callout-color-important: $red;
 /*-- scss:rules --*/
 // used to create CSS rules. Note that CSS rules that target Reveal content generally need to use the .reveal .slide prefix to successfully override the theme’s default styles.
 
+// custom title slide
+#title-slide {
+  .title {
+    font-size: 4.5em;
+    color: $primary-color;
+  }
+
+  .subtitle {
+    font-size: 3em;
+    color: $second-color;
+  }
+
+  .quarto-title-author {
+    color: $third-color;
+  }
+}
 
 
 // color classes
@@ -161,31 +182,4 @@ $callout-color-important: $red;
 
 .third-color {
   color: $third-color;
-}
-
-// code
-pre.sourceCode {
-  border-radius: 0;
-  border-left-color: $gray-300;
-}
-
-// light vs dark modes
-.light-mode {
-  display: block; 
-}
-.dark-mode {
-  display: none;
-}
-
-// links
-a {
-  color: $body-color;
-  text-decoration-thickness: 1px;
-  //text-underline-offset: .1rem;
-  //text-underline-position: under;
-}
-
-a:hover {
-  color: $primary-color;
-  text-decoration-color: $primary-color;
 }
