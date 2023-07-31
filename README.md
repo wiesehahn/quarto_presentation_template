@@ -1,0 +1,38 @@
+
+# Presentation Template
+
+This template repository is meant as personal starting point to create [RevealJS](https://revealjs.com/) presentations from Markdown via [Quarto](https://quarto.org/). It should provide a skeleton for a quick entry, using a concise style between presentations and automatic rendering via Github workflows. 
+
+### Get startet
+
+If everything works well the only thing you have to do is add content to the `presentation.qmd` file.
+
+Informtion about Quarto Markdown syntax and options for RevealJS presentations can be found at https://quarto.org/docs/presentations/revealjs/.
+
+
+### Pre-installed extensions
+
+#### [Quarto social embeds](https://github.com/sellorm/quarto-social-embeds)
+
+Use to embed GitHub gists, Twitter, Youtube, Vimeo, Mastodon, e.g.:
+`{{< gist wiesehahn 6b6c215c227341f4faab03ff96fa7f1b >}}`
+
+#### [Attribution](https://github.com/quarto-ext/attribution)
+
+Use to display attribution text sideways, e.g.:
+```r
+::: {.attribution}
+by [@Jens Wiesehahn](https://wiesehahn.github.io/)
+:::
+```
+
+#### [Lightbox](https://github.com/quarto-ext/lightbox)
+
+Use to add lightbox styling and behavior to images in HTML documents, e.g.:
+
+`![logo](images/triangle_logo.png){.lightbox}`
+
+#### [Verticator](https://github.com/Martinomagnifico/quarto-verticator)
+
+Adds indicators to show the amount of slides in a vertical stack.
+

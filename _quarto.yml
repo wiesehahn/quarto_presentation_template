@@ -1,0 +1,34 @@
+project:
+    type: website
+
+title: "Presentation"
+subtitle: "A template"
+author: "Jens Wiesehahn"
+
+format:
+    revealjs:
+        width: 1600
+        height: 1200
+        margin: 0.1
+        #title-slide-attributes:
+        #    data-background-image: images/triangle_logo.png
+        #    data-background-size: cover
+        #    data-background-opacity: "1"
+        slide-number: c/t
+        transition: slide
+        background-transition: fade
+        preview-links: false 
+        preload-iframes: false 
+        theme: [default, assets/custom_theme.scss]
+        navigation-mode: vertical
+        tbl-cap-location: bottom
+        mainfont: Nunito
+
+revealjs-plugins:
+    - verticator
+    - attribution
+
+filters:
+    - lightbox
+
+# bibliography: references.bib
