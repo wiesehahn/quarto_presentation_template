@@ -6,13 +6,9 @@
 //  what can be customized within a theme: https://quarto.org/docs/presentations/revealjs/themes.html#sass-variables
 
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Nunito&display=swap');
 
-/*
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Nunito&display=swap');
-$font-family-sans-serif: 'Comfortaa', Helvetica, sans-serif;
-$presentation-heading-font: $font-family-sans-serif;
-*/
+$presentation-heading-font: 'Libre Franklin', sans-serif;
 
 // warmer grays (hue 240)
 $white:    #fff !default;
@@ -27,6 +23,18 @@ $gray-800: #343440 !default;
 $gray-900: #212129 !default;
 $black:    #000 !default;
 
+$blue-400: #4588ec !default;
+$blue-500: #2a6de0 !default;
+$blue-600: #0011bb !default;
+$blue-700: #020f9f !default;
+$blue-800: #010b76 !default;
+/*
+$blue-600: #1225d1 !default;
+$blue-700: #3d03c3 !default;
+$blue-800: #2b038a !default;
+$blue-900: #1d0061 !default;
+$indigo-blue:  #4a38ef !default;
+*/
 
 $blue:    #4582ec !default;
 $indigo:  #6610f2 !default;
@@ -39,34 +47,27 @@ $green:   #02b875 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
-/*
-//  my colors (comment out above)
-$pink: #D4006A;
-$blue: #006AD4;
-$green: #00D46A;
-$cyan: #00D4D4;
-$red: #D40000;
-$indigo: #0000D4;
-$purple: #6A00D4;
-$orange: #D46A00;
-$yellow: #D4D400;
-$darker-green: #008542;
 
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
 
-$primary-color: $pink !default;
-$second-color:  $purple;
-$third-color:   $blue;
-$light:         $gray-100 !default;
-*/
+
+// from imag logo
+$highlight-pink:#f10087 !default;
+$highlight-yellow: #fff04c !default;
+$highlight-blue: #00b0ea !default;
+
+
 $light:         #fefefe !default;
 $dark:          $gray-900 !default;
 
 // $primary-color: #0011bb; !default;
+$primary-color:  $blue-600 !default;
+$second-color:  $blue-700 !default;
+$third-color:   $blue-800 !default;
+/*
 $primary-color: #02457a !default;
 $second-color:  #018abe;
 $third-color:   #97CADB;
+*/
 
 $success:       $green !default;
 $info:          $cyan !default;
@@ -79,12 +80,12 @@ $body-bg: $light;
 $body-color: $dark;
 
 $code-bg: darken($body-bg, 3%);
-$code-color: $second-color;
+$code-color: $highlight-pink;//$blue-800;
 
 $code-block-bg: darken($body-bg, 3%);
 $code-block-border-color: $body-bg;
 
-$link-color: $blue;
+$link-color: $blue-600;//$indigo-blue;
 
 $border-color: lighten($link-color, 25%);
 
@@ -141,11 +142,11 @@ h6 code {
 }
 
 // callouts
-$callout-color-note: $blue;
+$callout-color-note: $highlight-blue;
 $callout-color-tip: $green;
-$callout-color-caution: $purple;
-$callout-color-warning: $orange;
-$callout-color-important: $red;
+$callout-color-caution: $orange;
+$callout-color-warning: $highlight-yellow;
+$callout-color-important: $highlight-pink;
 
 
 
