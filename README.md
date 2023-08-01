@@ -44,3 +44,8 @@ Use to add lightbox styling and behavior to images in HTML documents, e.g.:
 
 Adds indicators to show the amount of slides in a vertical stack.
 
+#### [Qrcode Extension for Quarto](https://github.com/jmbuhr/quarto-qrcode)
+
+Provides shortcodes for qrcodejs in quarto, e.g.:
+
+`{{< qrcode https://github.com/jmbuhr/quarto-qrcode >}}`
