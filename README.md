@@ -1,11 +1,17 @@
 
 # Presentation Template
 
-This template repository is meant as personal starting point to create [RevealJS](https://revealjs.com/) presentations from Markdown via [Quarto](https://quarto.org/). It should provide a skeleton for a quick entry, using a concise style between presentations and automatic rendering via Github workflows. 
+This template repository is meant as personal starting point to create [RevealJS](https://revealjs.com/) presentations from Markdown via [Quarto](https://quarto.org/). It should provide a skeleton for a quick entry, using a concise style between presentations and automatic rendering via Github workflows (only works in Public Repositories).
+
 
 ### Get startet
 
-If everything works well the only thing you have to do is add content to the `presentation.qmd` file.
+The following files contain sample code (including variables such as website), please edit / replace the content:
+- `presentation.qmd` (main file to add content for presentation) 
+- `references.bib` (optionally, add references to be included)
+- `_quarto.yml` (main file to change presentation settings)
+- `_variables.yml` (optionally, add variables to be added in .qmd)
+
 
 Informtion about Quarto Markdown syntax and options for RevealJS presentations can be found at https://quarto.org/docs/presentations/revealjs/.
 

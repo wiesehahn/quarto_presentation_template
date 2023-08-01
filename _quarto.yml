@@ -1,13 +1,15 @@
+# <!-- EXAMPLE CONTENT - EDIT / REPLACE BELOW -->
+title: "Presentation"
+subtitle: "A template"
+author: "Jens Wiesehahn"
+# institute: 
+
+
 project:
     type: website
 
 website:
     favicon: images/triangle_favicon.png
-
-title: "Presentation"
-subtitle: "A template"
-author: "Jens Wiesehahn"
-# institute: 
 
 format: # format options: https://quarto.org/docs/reference/formats/presentations/revealjs.html
     revealjs:
