@@ -8,10 +8,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-//@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-//$headings-font-family: 'IBM+Plex+Serif', serif;
-
-
+/*
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Nunito&display=swap');
+$font-family-sans-serif: 'Comfortaa', Helvetica, sans-serif;
+$presentation-heading-font: $font-family-sans-serif;
+*/
 
 // warmer grays (hue 240)
 $white:    #fff !default;
@@ -62,6 +63,7 @@ $light:         $gray-100 !default;
 $light:         #fefefe !default;
 $dark:          $gray-900 !default;
 
+// $primary-color: #0011bb; !default;
 $primary-color: #02457a !default;
 $second-color:  #018abe;
 $third-color:   #97CADB;
@@ -76,10 +78,10 @@ $danger:        $red !default;
 $body-bg: $light;
 $body-color: $dark;
 
-$code-bg: darken($body-bg, 5%);
+$code-bg: darken($body-bg, 3%);
 $code-color: $second-color;
 
-$code-block-bg: darken($body-bg, 5%);
+$code-block-bg: darken($body-bg, 3%);
 $code-block-border-color: $body-bg;
 
 $link-color: $blue;
@@ -182,4 +184,18 @@ $callout-color-important: $red;
 
 .third-color {
   color: $third-color;
+}
+
+// customize slide logo
+.reveal .slide-logo {
+  display: block;
+  position: fixed;
+  bottom: unset !important;
+  right: unset !important;
+  top: 5px;
+  left: 12px;
+  height: 25px !important;
+  // width: 30px !important;
+  max-width: unset !important;
+  max-height: unset !important;
 }
