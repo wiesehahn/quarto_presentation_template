@@ -24,7 +24,7 @@ by [Jens Wiesehahn](https://wiesehahn.github.io/)
 :::
 
 
-## Reference
+## Reference & Footer
 
 ``` markdown                            
 Lets insert a reference at the end of a sentence [@Wiesehahn_2023]. 
@@ -45,6 +45,20 @@ The reference list is added at the end of the document, or can be added via
 :::
 
 ```
+
+To insert a footer use:
+
+
+``` markdown                            
+::: footer
+Custom footer text
+:::
+```
+::: footer
+Custom footer text
+:::
+
+
 
 ## Text Formatting
 
@@ -137,7 +151,7 @@ The reference list is added at the end of the document, or can be added via
 [![](/images/triangle_logo.png){fig-alt="Logo image."}](https://quarto.org)          
 
 
-## Lists
+## Lists {.scrollable}
 
 +-----------------------------------+---------------------------------+
 | Markdown Syntax                   | Output                          |
@@ -213,7 +227,7 @@ Note that unlike other Markdown renderers (notably Jupyter and GitHub), lists in
 
 
 
-## Source Code
+## Source Code {.scrollable}
 
 Use ```` ``` ```` to delimit blocks of source code:
 
@@ -248,11 +262,34 @@ gives
 ````
 
 
+Highlight certain lines with e.g. `{.python code-line-numbers="6-8"}`
+
+```{.python code-line-numbers="6-8"}
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+
 You can collapse code with 
 ```markdown 
 #| code-fold: true
 #| code-summary: "Code"
 ```
+
+````{.r}
+#| code-fold: true
+#| code-summary: "Code"
+
+1+1
+````  
 
 
 
@@ -383,8 +420,17 @@ Note that there are five types of callouts, including `note`, `tip`, `warning`, 
 | ```                      |                          |
 +--------------------------+--------------------------+
 
+# Final Slide
 
-# References
+
+Slides available under  
+[{{< var website >}}]({{< var website >}})
+
+{{< qrcode https://wiesehahn.github.io/quarto_presentation_template width=500 height=500 colorDark='#0011bb' >}}
+
+
+
+# References {visibility="uncounted"}
 
 ::: {#refs}
 :::
