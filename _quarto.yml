@@ -1,6 +1,9 @@
 project:
     type: website
 
+website:
+    favicon: images/triangle_favicon.png
+
 title: "Presentation"
 subtitle: "A template"
 author: "Jens Wiesehahn"
