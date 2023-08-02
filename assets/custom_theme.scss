@@ -6,7 +6,7 @@
 //  what can be customized within a theme: https://quarto.org/docs/presentations/revealjs/themes.html#sass-variables
 
 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Nunito&family=Roboto+Mono&display=swap');
 
 $presentation-heading-font: 'Libre Franklin', sans-serif;
 
@@ -85,9 +85,9 @@ $code-color: $highlight-pink;//$blue-800;
 $code-block-bg: darken($body-bg, 3%);
 $code-block-border-color: $body-bg;
 
-$link-color: $blue-600;//$indigo-blue;
+//$link-color: $blue-600;//$indigo-blue;
 
-$border-color: lighten($link-color, 25%);
+//$border-color: lighten($link-color, 25%);
 
 
 
@@ -114,7 +114,7 @@ code {
 }
 
 code span.co {
-  font-family: "MonoLisa-RegularItalic", "Fira Mono", monospace;
+  font-family: "Roboto+Mono", monospace;
 }
 
 h1 code {
@@ -197,4 +197,19 @@ $callout-color-important: $highlight-pink;
   // width: 30px !important;
   max-width: unset !important;
   max-height: unset !important;
+}
+
+// links
+.reveal a {
+  color: $body-color;
+  text-decoration: underline;
+  text-decoration-color: lighten($body-color, 50%);
+  text-decoration-thickness: 1px;
+  text-underline-offset: .1rem;
+  text-underline-position: under;
+}
+
+.reveal a:hover {
+  color: $third-color;
+  text-decoration-color:$highlight-blue;
 }

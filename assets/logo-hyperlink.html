@@ -1,0 +1,15 @@
+<script type="text/javascript">
+    function hyperlink_logo() {
+        let logo = document.querySelector('img.slide-logo');
+        const logo_cloned = logo.cloneNode(true);
+        const link = document.createElement('a');
+        link.href = 'https://wiesehahn.github.io';
+        link.target = '_blank';
+        link.appendChild(logo_cloned);
+        logo.replaceWith(link);
+    };
+    
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+        hyperlink_logo();
+    });
+</script>

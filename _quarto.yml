@@ -4,12 +4,16 @@ subtitle: "A template"
 author: "Jens Wiesehahn"
 # institute: 
 
-
 project:
     type: website
 
 website:
+    title: "{{< var website-title >}}"
+    description: "{{< var website-description >}}"
+    site-url: "{{< var website-url >}}"
+    repo-url: "{{< var repository-url >}}"
     favicon: images/triangle_favicon.png
+
 
 format: # format options: https://quarto.org/docs/reference/formats/presentations/revealjs.html
     revealjs:
@@ -30,6 +34,7 @@ format: # format options: https://quarto.org/docs/reference/formats/presentation
         navigation-mode: vertical
         tbl-cap-location: bottom
         mainfont: Nunito
+        monofont: Roboto Mono
         code-line-numbers: false
         code-fold: true
         code-summary: "Show the code"
@@ -52,3 +57,6 @@ filters:
     - lightbox
 
 bibliography: references.bib
+
+
+include-after-body: assets/logo-hyperlink.html

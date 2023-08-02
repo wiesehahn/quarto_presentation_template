@@ -1,4 +1,6 @@
 # <!-- EXAMPLE CONTENT - EDIT / REPLACE BELOW -->
 
-repository: https://github.com/wiesehahn/quarto_website_template
-website: https://wiesehahn.github.io/quarto_presentation_template
+website-title: "Presentation Template"
+website-description: "Personal template repository for Quarto -> RevealJS presentations"
+website-url: https://wiesehahn.github.io/quarto_presentation_template
+repository-url: https://github.com/wiesehahn/quarto_website_template
