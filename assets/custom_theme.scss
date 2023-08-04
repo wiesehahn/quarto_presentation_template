@@ -173,17 +173,31 @@ $callout-color-important: $highlight-pink;
 
 
 // color classes
-.primary {
-    color: $primary-color;
+.primary-color {
+  color: $primary-color;
 }
-
 .second-color {
   color: $second-color;
 }
-
 .third-color {
   color: $third-color;
 }
+.light-color {
+  color: $light;
+}
+.dark-color {
+  color: $dark;
+}
+.highlight-color-pink {
+  color: $highlight-pink;
+}
+.highlight-color-yellow {
+  color: $highlight-yellow;
+}
+.highlight-color-blue {
+  color: $highlight-blue;
+}
+
 
 // customize slide logo
 .reveal .slide-logo {
