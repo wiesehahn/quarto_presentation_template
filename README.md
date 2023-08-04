@@ -55,3 +55,8 @@ Adds indicators to show the amount of slides in a vertical stack.
 Provides shortcodes for qrcodejs in quarto, e.g.:
 
 `{{< qrcode https://github.com/jmbuhr/quarto-qrcode >}}`
+
+#### [Iconify](https://github.com/mcanouil/quarto-iconify)
+
+provides support to free and open source icons provided by [Iconify](https://icon-sets.iconify.design/), e.g.:
+`{{< iconify typcn plus >}}`
