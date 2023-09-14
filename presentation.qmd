@@ -423,11 +423,34 @@ Note that there are five types of callouts, including `note`, `tip`, `warning`, 
 
 # Final Slide
 
+<br>
 
-Slides available under  
-[{{< var website-url >}}]({{< var website-url >}})
+:::: {.columns}
+::: {.column width="70%"}
+
+some **conclusion** remarks
+
+- [nice presentation]{.highlight-color-pink}
+
+<br>
+
+{{< iconify tabler mail size=lg >}} *[{{< var email-adress >}}](mailto:{{< var email-adress >}})*
+
+{{< iconify line-md mastodon size=lg >}} *[{{< var mastodon-name >}}]({{< var mastodon-url >}})*
+
+:::
+
+::: {.column width="30%"}
+Slides available at: 
+
+[{{< var website-name >}}]({{< var website-url >}})
+
+<br>
 
 {{< qrcode https://wiesehahn.github.io/quarto_presentation_template width=500 height=500 colorDark='#0011bb' >}}
+:::
+::::
+
 
 
 # References {visibility="uncounted"}

@@ -2,5 +2,12 @@
 
 website-title: "Presentation Template"
 website-description: "Personal template repository for Quarto -> RevealJS presentations"
+
+website-name: wiesehahn.github.io/quarto_presentation_template
 website-url: https://wiesehahn.github.io/quarto_presentation_template
 repository-url: https://github.com/wiesehahn/quarto_website_template
+
+mastodon-name: JensWiesehahn
+mastodon-url: https://elk.zone/fosstodon.org/@JensWiesehahn
+
+email-adress: wiesehahn.jens@gmail.com
