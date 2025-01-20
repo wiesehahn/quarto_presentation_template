@@ -1,70 +1,107 @@
-ul.verticator {
+
+/*****************************************************************
+ *
+ * Verticator for Reveal.js 
+ * Version 1.2.6
+ * 
+ * @author: Martijn De Jongh (Martino), martijn.de.jongh@gmail.com
+ * https://github.com/martinomagnifico
+ *
+ * @license 
+ * MIT licensed
+ * 
+ * Copyright (C) 2023 Martijn De Jongh (Martino)
+ *
+ ******************************************************************/
+
+
+
+ul.verticator,
+.reveal ul.verticator {
   opacity: 0;
+  pointer-events: none;
   will-change: color;
   color: white;
   color: var(--v-forcecolor, var(--v-color, var(--c-theme-color, white)));
-  -webkit-transition: opacity 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-  -o-transition: opacity 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: opacity 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   list-style: none;
-  right: auto;
-  left: auto;
-  margin: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%) translateZ(0);
-          transform: translateY(-50%) translateZ(0);
-  z-index: 10;
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  transform: translateY(-50%) translateZ(0);
+  z-index: 2;
+  position: sticky;
+  width: max-content;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 12px;
+  flex-direction: column;
+}
+ul.verticator .verticator-holder,
+.reveal ul.verticator .verticator-holder {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
   padding: calc(12px * var(--verticator-scale));
 }
-ul.verticator.visible {
-  opacity: 0.6;
+ul.verticator:not(.left),
+.reveal ul.verticator:not(.left) {
+  margin: 0 0 0 auto;
 }
-ul.verticator.visible:hover {
+ul.verticator.left,
+.reveal ul.verticator.left {
+  margin: 0 auto 0 0;
+}
+ul.verticator.left .verticator-holder,
+.reveal ul.verticator.left .verticator-holder {
+  right: auto;
+  left: 0;
+}
+ul.verticator.visible,
+.reveal ul.verticator.visible {
+  opacity: 0.6;
+  pointer-events: inherit;
+}
+ul.verticator.visible:hover,
+.reveal ul.verticator.visible:hover {
   opacity: 1;
 }
-ul.verticator.no-click {
+ul.verticator.resizing, ul.verticator.resizing.visible,
+.reveal ul.verticator.resizing,
+.reveal ul.verticator.resizing.visible {
+  opacity: 0;
   pointer-events: none;
 }
-ul.verticator li {
+ul.verticator.no-click,
+.reveal ul.verticator.no-click {
+  pointer-events: none;
+}
+ul.verticator li,
+.reveal ul.verticator li {
   display: block;
   position: relative;
   will-change: color;
   color: inherit;
   margin: 0;
-  -webkit-transition: opacity 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-  -o-transition: opacity 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: opacity 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   opacity: 0;
 }
-ul.verticator li:before {
+ul.verticator li:before,
+.reveal ul.verticator li:before {
   display: none;
 }
-ul.verticator li a {
+ul.verticator li a,
+.reveal ul.verticator li a {
   color: inherit;
   will-change: color;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   width: calc(18px * var(--verticator-scale));
   height: calc(18px * var(--verticator-scale));
 }
-ul.verticator li a:after {
+ul.verticator li a:after,
+.reveal ul.verticator li a:after {
   content: "";
   will-change: color;
   color: inherit;
@@ -73,41 +110,55 @@ ul.verticator li a:after {
   width: calc(12px * var(--verticator-scale));
   height: calc(12px * var(--verticator-scale));
   opacity: 0.6;
-  -webkit-transform: translateZ(0) scale(0.4);
   transform: translateZ(0) scale(0.4);
   border-radius: 100%;
-  -webkit-transition: opacity 200ms cubic-bezier(0.26, 0.86, 0.44, 0.985), -webkit-transform 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-  transition: opacity 200ms cubic-bezier(0.26, 0.86, 0.44, 0.985), -webkit-transform 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-  -o-transition: transform 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985), opacity 200ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: transform 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985), opacity 200ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-  transition: transform 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985), opacity 200ms cubic-bezier(0.26, 0.86, 0.44, 0.985), -webkit-transform 300ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-  -webkit-transition-delay: 50ms;
-       -o-transition-delay: 50ms;
-          transition-delay: 50ms;
+  transition-delay: 50ms;
 }
-ul.verticator li a:hover {
+ul.verticator li a:hover,
+.reveal ul.verticator li a:hover {
   color: inherit;
 }
-ul.verticator li a:hover:after {
+ul.verticator li a:hover:after,
+.reveal ul.verticator li a:hover:after {
   opacity: 1;
-  -webkit-transform: translateZ(0) scale(0.75);
-          transform: translateZ(0) scale(0.75);
+  transform: translateZ(0) scale(0.75);
 }
-ul.verticator li.active a {
+ul.verticator li.active a,
+.reveal ul.verticator li.active a {
   cursor: default;
 }
-ul.verticator li.active a:after {
-  -webkit-transform: translateZ(0) scale(1);
-          transform: translateZ(0) scale(1);
+ul.verticator li.active a:after,
+.reveal ul.verticator li.active a:after {
+  transform: translateZ(0) scale(1);
   opacity: 1;
 }
-ul.verticator.visible li {
+ul.verticator.visible li,
+.reveal ul.verticator.visible li {
   opacity: 1;
+}
+.reveal-viewport.reveal-scroll ul.verticator,
+.reveal-viewport.reveal-scroll .reveal ul.verticator {
+  display: none;
 }
 
 .print-pdf .verticator,
 .overview .verticator {
   display: none;
+}
+
+section.has-light-background section.has-dark-background,
+section.has-dark-background section.has-light-background {
+  color: var(--r-main-color);
+}
+section.has-light-background section.has-dark-background h1, section.has-light-background section.has-dark-background h2, section.has-light-background section.has-dark-background h3, section.has-light-background section.has-dark-background h4, section.has-light-background section.has-dark-background h5, section.has-light-background section.has-dark-background h6,
+section.has-dark-background section.has-light-background h1,
+section.has-dark-background section.has-light-background h2,
+section.has-dark-background section.has-light-background h3,
+section.has-dark-background section.has-light-background h4,
+section.has-dark-background section.has-light-background h5,
+section.has-dark-background section.has-light-background h6 {
+  color: var(--r-heading-color);
 }
 
 .verticator {
@@ -120,10 +171,8 @@ ul.verticator.visible li {
   right: 30px;
   top: calc(9px * var(--verticator-scale));
   right: calc(30px * var(--verticator-scale) + 1.5px * var(--verticator-tooltip-scale) * var(--verticator-tooltip-scale));
-  -webkit-transform: translate3d(0, -50%, 1px);
-          transform: translate3d(0, -50%, 1px);
-  -webkit-box-shadow: calc(4px * var(--verticator-scale)) calc(6px * var(--verticator-scale)) calc(16px * var(--verticator-scale)) rgba(0, 0, 0, 0.25);
-          box-shadow: calc(4px * var(--verticator-scale)) calc(6px * var(--verticator-scale)) calc(16px * var(--verticator-scale)) rgba(0, 0, 0, 0.25);
+  transform: translate3d(0, -50%, 1px);
+  box-shadow: calc(4px * var(--verticator-scale)) calc(6px * var(--verticator-scale)) calc(16px * var(--verticator-scale)) rgba(0, 0, 0, 0.25);
   pointer-events: none;
   background: white;
   font-size: calc(1.25rem * var(--verticator-tooltip-scale) * var(--verticator-scale));
@@ -139,8 +188,7 @@ ul.verticator.visible li {
   white-space: nowrap;
   display: block;
   overflow: hidden;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
+  text-overflow: ellipsis;
   line-height: 1.25;
 }
 .verticator .tooltip::after {
@@ -152,33 +200,26 @@ ul.verticator.visible li {
   position: absolute;
   right: 0;
   top: 50%;
-  -webkit-transform: translate3d(45%, -50%, -1px) rotate(45deg);
-          transform: translate3d(45%, -50%, -1px) rotate(45deg);
+  transform: translate3d(45%, -50%, -1px) rotate(45deg);
 }
 
 .verticator.left .tooltip {
   right: auto;
   left: calc(30px * var(--verticator-scale) + 1.5px * var(--verticator-tooltip-scale) * var(--verticator-tooltip-scale));
-  -webkit-box-shadow: calc(-4px * var(--verticator-scale)) calc(6px * var(--verticator-scale)) calc(16px * var(--verticator-scale)) rgba(0, 0, 0, 0.25);
-          box-shadow: calc(-4px * var(--verticator-scale)) calc(6px * var(--verticator-scale)) calc(16px * var(--verticator-scale)) rgba(0, 0, 0, 0.25);
+  box-shadow: calc(-4px * var(--verticator-scale)) calc(6px * var(--verticator-scale)) calc(16px * var(--verticator-scale)) rgba(0, 0, 0, 0.25);
 }
 .verticator.left .tooltip::after {
   right: auto;
   left: 0;
-  -webkit-transform: translate3d(-45%, -50%, -1px) rotate(45deg);
-          transform: translate3d(-45%, -50%, -1px) rotate(45deg);
+  transform: translate3d(-45%, -50%, -1px) rotate(45deg);
 }
 
 .verticator li a + .tooltip {
   pointer-events: none;
   display: block;
   opacity: 0;
-  -webkit-transition: opacity 0.125s ease-in-out;
-  -o-transition: opacity 0.125s ease-in-out;
   transition: opacity 0.125s ease-in-out;
-  -webkit-transition-delay: 0.0625s;
-       -o-transition-delay: 0.0625s;
-          transition-delay: 0.0625s;
+  transition-delay: 0.0625s;
 }
 
 .verticator li a:hover + .tooltip {
