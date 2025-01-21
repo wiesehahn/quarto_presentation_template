@@ -12,8 +12,14 @@ The following files contain sample code (including variables such as website), p
 - `_quarto.yml` (main file to change presentation settings)
 - `_variables.yml` (optionally, add variables to be added in .qmd)
 
-
 Informtion about Quarto Markdown syntax and options for RevealJS presentations can be found at https://quarto.org/docs/presentations/revealjs/.
+
+#### Citation
+The repository comes with a `CITATION.cff` file, which provides information about the correct citation. It is supported by Github, Zenodo and Zotero. 
+Change fields to desired variables or delete completely. A file can also be created or updated using a [UI](https://citation-file-format.github.io/cff-initializer-javascript/#/).
+
+To create a DOI for the repository you have to [connect to Zenodo](https://docs.github.com/de/repositories/archiving-a-github-repository/referencing-and-citing-content) and publish a release.
+
 
 #### References
 
