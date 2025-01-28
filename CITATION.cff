@@ -2,8 +2,7 @@ cff-version: 1.2.0
 title: >-
   Quarto Presentation Template
 message: >-
-  If you use this dataset, please cite it using the metadata
-  from this file.
+  Rendered presentation available at https://wiesehahn.github.io/quarto_presentation_template/presentation
 type: dataset
 authors:
   - given-names: Jens

@@ -1,5 +1,5 @@
 # <!-- EXAMPLE CONTENT - EDIT / REPLACE BELOW -->
-title: "Presentation"
+title: "{{< var website-title >}}"
 subtitle: "A template"
 author: "Jens Wiesehahn"
 # institute: 
@@ -8,7 +8,6 @@ project:
     type: website
 
 website:
-    title: "{{< var website-title >}}"
     description: "{{< var website-description >}}"
     site-url: "{{< var website-url >}}"
     repo-url: "{{< var repository-url >}}"
