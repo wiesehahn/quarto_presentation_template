@@ -3,6 +3,41 @@
 
 This template repository is meant as personal starting point to create [RevealJS](https://revealjs.com/) presentations from Markdown via [Quarto](https://quarto.org/). It should provide a skeleton for a quick entry, using a concise style between presentations and automatic rendering via Github workflows (only works in Public Repositories).
 
+## The Readme
+
+This file (README.md) is the entry point to the repository on Github. There are several ways to make it visually appealing. 
+
+Ideally add an **Abstract**, in case it is in German also add a **Zusammenfassung**.
+
+Use badges if appropriate, they can be created via https://shields.io/badges/static-badge and optionally contain logos from https://simpleicons.org. 
+
+E.g. 
+[![video recording](https://img.shields.io/badge/Video%20Recording-373b38?logo=youtube)](https://youtube.com)  [![presentation slides](https://img.shields.io/badge/Presentation%20Slides-373b38?logo=revealdotjs&logoColor=white)](https://wiesehahn.github.io/quarto_presentation_template/presentation.html)
+
+```markdown
+
+# Title
+
+*(Presented at X)*
+
+##### Keywords:
+**Keyword1**, **Keyword2**
+
+[![video recording](https://img.shields.io/badge/Video%20Recording-373b38?logo=youtube)](https://youtube.com)  [![presentation slides](https://img.shields.io/badge/Presentation%20Slides-373b38?logo=revealdotjs&logoColor=white)](https://wiesehahn.github.io/quarto_presentation_template/presentation.html)
+
+
+
+#### Abstract
+
+Template repository to help creating a presentation in Quarto which is rendered to RevealJS via Github Actions.
+
+--- 
+
+#### Description
+
+This template repository is meant as personal starting point to create [RevealJS](https://revealjs.com/) presentations from Markdown via [Quarto](https://quarto.org/). It should provide a skeleton for a quick entry, using a concise style between presentations and automatic rendering via Github workflows (only works in Public Repositories).
+```
+
 
 ### Get startet
 
@@ -18,7 +53,11 @@ Informtion about Quarto Markdown syntax and options for RevealJS presentations c
 The repository comes with a `CITATION.cff` file, which provides information about the correct citation. It is supported by Github, Zenodo and Zotero. 
 Change fields to desired variables or delete completely. A file can also be created or updated using a [UI](https://citation-file-format.github.io/cff-initializer-javascript/#/).
 
-To create a DOI for the repository you have to [connect to Zenodo](https://docs.github.com/de/repositories/archiving-a-github-repository/referencing-and-citing-content) and publish a release.
+To create a DOI for the repository you have to [connect to Zenodo](https://docs.github.com/de/repositories/archiving-a-github-repository/referencing-and-citing-content).
+
+1. [toggle switch for repository](https://zenodo.org/account/settings/github/)
+2. [ publish a release](https://docs.github.com/de/repositories/releasing-projects-on-github/managing-releases-in-a-repository)
+3. (optionally) add DOI to `CITATION.cff` and as badge in `README.md`
 
 
 #### References
