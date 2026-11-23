@@ -49,6 +49,20 @@ The following files contain sample code (including variables such as website), p
 
 Informtion about Quarto Markdown syntax and options for RevealJS presentations can be found at https://quarto.org/docs/presentations/revealjs/.
 
+#### Render as website
+
+The workflow `.github/workflows/publish.yml` renders the presentation with Quarto and deploys it to GitHub Pages on every push to `main`.
+
+Before the first run, enable GitHub Pages once (otherwise the workflow fails with `403` in the *Setup Pages* step):
+
+1. Go to the repository **Settings → Pages**
+2. Under **Build and deployment → Source**, select **GitHub Actions**
+3. Push to `main` (or re-run the workflow in the **Actions** tab)
+
+The slides are then available at `https://<username>.github.io/<repository>/presentation.html`.
+
+To preview locally, run `quarto preview` (or `quarto render` to build into `_site/`).
+
 #### Citation
 The repository comes with a `CITATION.cff` file, which provides information about the correct citation. It is supported by Github, Zenodo and Zotero. 
 Change fields to desired variables or delete completely. A file can also be created or updated using a [UI](https://citation-file-format.github.io/cff-initializer-javascript/#/).
